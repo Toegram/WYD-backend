@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2018_09_07_142644) do
 
   create_table "parties", force: :cascade do |t|
     t.string "address"
+    t.string "description"
     t.integer "capacity"
     t.integer "host_id"
     t.datetime "created_at", null: false
