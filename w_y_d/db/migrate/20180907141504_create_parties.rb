@@ -3,6 +3,7 @@ class CreateParties < ActiveRecord::Migration[5.2]
     create_table :parties do |t|
       t.string :address
       t.string :description
+      t.string :latlng
       t.integer :capacity
       t.integer :host_id
 
