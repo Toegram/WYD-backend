@@ -4,7 +4,6 @@ class CreateParties < ActiveRecord::Migration[5.2]
       t.string :address
       t.string :description
       t.string :latlng
-      t.integer :capacity
       t.integer :host_id
 
       t.timestamps

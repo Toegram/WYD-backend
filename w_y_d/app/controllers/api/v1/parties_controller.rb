@@ -7,13 +7,12 @@ class Api::V1::PartiesController < ApplicationController
 
   def create
     @party = Party.create(party_params)
-    byebug
   end
 
 
   private
     def party_params
-      params.require(:party).permit(:address, :description, :capacity, :host_id)
+      params.require(:party).permit(:address, :description, :host_id, :latlng)
     end
 
 end
